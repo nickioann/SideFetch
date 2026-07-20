@@ -5,5 +5,5 @@ List of logos i'd like to may or may not make:
 - fortinet
 - speedtest
 - Windows WSL
-- tplink omada
-- pihole
+- tplink omada network controller
+- pihole DNS
