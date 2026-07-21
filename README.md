@@ -6,4 +6,3 @@ List of logos i'd like to may or may not make:
 - speedtest
 - Windows WSL
 - tplink omada network controller
-- pihole DNS
