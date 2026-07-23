@@ -1,5 +1,8 @@
-A simple repository of non-distro fastfetch logos I and only I make.
+# Custom Fastfetch Logos
 
-List of logos i'd like to may or may not make:
-- python
-- wireguard
+A simple repository of non-distro Fastfetch logos created exclusively by me.
+
+## Planned/Uncertain Logos
+
+- Python
+- WireGuard
