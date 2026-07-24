@@ -2,7 +2,7 @@
 
 Custom RGB colors for Fastfetch, sorted by the spectrum (Red → Purple).
 
-*   **WireGuard Crimson** -> '"38;2;136;23;26"'
+*   **WireGuard Crimson** -> "38;2;136;23;26"
 *   **Debian Maroon** -> "38;2;215;10;83"
 *   **Ubuntu Orange** -> "38;2;233;84;32"
 *   **Light Beige** -> "38;2;245;245;230"
