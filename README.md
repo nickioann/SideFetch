@@ -2,8 +2,6 @@
 
 A simple repository of non-distro logos created exclusively by me for [fastfetch-cli](https://github.com/fastfetch-cli/fastfetch).
 
-Undecided logos to or not to be added:
-
- -wireguared
- 
- -mario mushroom
+Undecided logos to add or not:
+   - wireguard
+   - mario mushroom
