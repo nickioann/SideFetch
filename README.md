@@ -4,3 +4,5 @@ A simple repository of non-distro logos created exclusively by me for [fastfetch
 
 Undecided logos to or not to be added:
 
+-wireguared
+-mario mushroom
