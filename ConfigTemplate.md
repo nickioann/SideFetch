@@ -42,7 +42,7 @@ Here is my config file for anyone to use as a template for their own. All text w
     "title",
     "break",
 
-    { "type": "custom", "format": "{#38;2;0;120;212}┌── 🖥️  HOST ──────────────────┐" },
+    { "type": "custom", "format": "{#38;2;0;120;212}┌── HOST ──────────────────┐" },
     // Note: Inline format strings use '38;2;R;G;B' to colorize header text
     "host",
     "kernel",
@@ -51,7 +51,7 @@ Here is my config file for anyone to use as a template for their own. All text w
 
     "break",
 
-    { "type": "custom", "format": "{#38;2;0;120;212}┌── 📦 SOFTWARE ──────────────┐" },
+    { "type": "custom", "format": "{#38;2;0;120;212}┌── SOFTWARE ──────────────┐" },
     "os",
     "de",
     // "wm",
@@ -73,7 +73,7 @@ Here is my config file for anyone to use as a template for their own. All text w
 
     "break",
 
-    { "type": "custom", "format": "{#38;2;0;120;212}┌── ⚡ HARDWARE ──────────────┐" },
+    { "type": "custom", "format": "{#38;2;0;120;212}┌── HARDWARE ──────────────┐" },
     "cpu",
     "gpu",
     "memory",
