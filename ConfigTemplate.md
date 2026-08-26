@@ -1,6 +1,6 @@
 # Config Template
 
-Here is my config file for anyone to use as a template for their own. All text with `//` in front of them wont be shown
+Here is my config file for anyone to use as a template for their own. All text with `//` on the back, wont be shown.
 
 ## `config.jsonc` file:
 
