@@ -2,7 +2,7 @@
 
 Here is my custom config file tailored for a clean, organized terminal overview! Feel free to copy and use it.
 
-## (`config.jsonc`) file
+## `config.jsonc` file:
 
 ```jsonc
 {
