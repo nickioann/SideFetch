@@ -1,6 +1,6 @@
-# SideFetch - Custom Fastfetch Config
+# Config Template
 
-Here is my custom config file tailored for a clean, organized terminal overview! Feel free to copy and use it.
+Here is my config file for anyone to use as a template for their own.
 
 ## `config.jsonc` file:
 
