@@ -36,7 +36,7 @@ Here is my custom config file tailored for a clean, organized terminal overview!
     "title",
     "break",
 
-    { "type": "custom", "format": "{#38;2;0;120;212}┌── 🖥️  HOST ──────────────────┐" },
+    { "type": "custom", "format": "{#38;2;0;120;212}┌── HOST ──────────────────┐" },
     "host",
     "kernel",
     "uptime",
@@ -44,7 +44,7 @@ Here is my custom config file tailored for a clean, organized terminal overview!
 
     "break",
 
-    { "type": "custom", "format": "{#38;2;0;120;212}┌── 📦 SOFTWARE ──────────────┐" },
+    { "type": "custom", "format": "{#38;2;0;120;212}┌── SOFTWARE ──────────────┐" },
     "os",
     "de",
     // "wm",
@@ -60,7 +60,7 @@ Here is my custom config file tailored for a clean, organized terminal overview!
 
     "break",
 
-    { "type": "custom", "format": "{#38;2;0;120;212}┌── ⚡ HARDWARE ──────────────┐" },
+    { "type": "custom", "format": "{#38;2;0;120;212}┌── HARDWARE ──────────────┐" },
     "cpu",
     "gpu",
     "memory",
