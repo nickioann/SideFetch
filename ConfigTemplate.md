@@ -54,19 +54,13 @@ Here is my config file for anyone to use as a template for their own. All text w
     { "type": "custom", "format": "{#38;2;0;120;212}┌── SOFTWARE ──────────────┐" },
     "os",
     "de",
-    // "wm",
-    // Uncomment if you use a standalone window manager
-    // "wmtheme",
-    // Window manager theme
-    // "theme",
-    // Desktop UI theme
-    // "icons",
-    // Icon pack name
-    // "cursor",
-    // Cursor theme
+    // "wm", // Uncomment if you use a standalone window manager
+    // "wmtheme", // Window manager theme
+    // "theme", // Desktop UI theme
+    // "icons", 
+    // "cursor", // Cursor theme
     "terminal",
-    // "terminalfont",
-    // Terminal font style
+    // "terminalfont", // Terminal font style
     "shell",
     "packages",
     "locale",
@@ -78,7 +72,6 @@ Here is my config file for anyone to use as a template for their own. All text w
     "gpu",
     "memory",
     // "swap",
-    // Virtual memory / swap usage
     "disk",
     "display",
     // "font",
