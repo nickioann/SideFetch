@@ -6,78 +6,93 @@ Here is my config file for anyone to use as a template for their own. All text w
 
 ```jsonc
 {
-  "$schema": "[https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json](https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json)",
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
 
   "logo": {
     "type": "file",
-    // Options: "auto", "file", "builtin", "iterm", "kitty", "nerdFont", "none"
-    "source": "C:/ProgramData/fastfetch/_tva.txt",
-    // Path to your custom text or image source file
-    "width": 20,
-    "padding": {
-      "right": 5
-    },
+    "source": "/home/nickioann/.config/fastfetch/onion.txt",
     "color": {
-      "1": "38;2;0;120;212",
-      // Note: '38;2' is required for true-color RGB (Red;Green;Blue)
-      "2": "38;2;215;10;83",
-      "3": "38;2;130;195;120"
+      //"1": "",
+      //"2": "yellow",
+      "3": "green"
     }
   },
 
   "display": {
-    "separator": " ──> ",
+    "separator": " ",
     "color": {
-      "keys": "38;2;0;120;212",
-      // Uses 38;2 for custom RGB key coloring
-      "title": "38;2;0;120;212",
-      // Uses 38;2 for custom RGB title coloring
-      "output": "38;2;200;200;200"
-      // Uses 38;2 for custom RGB output coloring
+      "keys": "blue",
+      "title": ""
     },
     "brightColor": false
   },
 
   "modules": [
-    "title",
-    "break",
 
-    { "type": "custom", "format": "{#38;2;0;120;212}┌── HOST ──────────────────┐" },
-    // Note: Inline format strings use '38;2;R;G;B' to colorize header text
-    "host",
+    { "type": "custom", "format": "{#white} ------ HOST ------ " },
+    { "type": "host",
+      "outputColor": "38;2;112;91;124" },
     "kernel",
+    "bios",
     "uptime",
     "localip",
-
     "break",
 
-    { "type": "custom", "format": "{#38;2;0;120;212}┌── SOFTWARE ──────────────┐" },
-    "os",
+    { "type": "custom", "format": "{#white} ------ SOFTWARE ------ " },
+    {
+      "type": "os",
+      "outputColor": ""
+    },
     "de",
-    // "wm", // Uncomment if you use a standalone window manager
-    // "wmtheme", // Window manager theme
-    // "theme", // Desktop UI theme
-    // "icons", 
-    // "cursor", // Cursor theme
     "terminal",
-    // "terminalfont", // Terminal font style
     "shell",
     "packages",
     "locale",
-
     "break",
 
-    { "type": "custom", "format": "{#38;2;0;120;212}┌── HARDWARE ──────────────┐" },
+    { "type": "custom", "format": "{#white} ------ HARDWARE ------ " },
     "cpu",
-    "gpu",
+
+    // MULTI-DEVICE / jq:
+    // Use JSON + jq when a module has multiple results and you want them separately.
+    //
+    // Inspect the module first:  fastfetch -s <module> --format json | jq
+    // jq indexes start at 0:
+    //   [0] = first   [1] = second   [2] = third
+    //
+    // GPU:
+    //   .[0].result[0].name = GPU 1
+    //   .[0].result[1].name = GPU 2
+    //
+    // Exact GPU 2 example:
+    //   fastfetch -s gpu --format json | jq -r '.[0].result[1].name'
+    //
+    // Colors:
+    //   outputColor = output/value
+    //   keyColor    = label/key
+    {
+      "type": "command",
+      "key": "GPU 1",
+      "outputColor": "38;2;130;195;120",
+      "text": "fastfetch -s gpu --format json | jq -r '.[0].result[0].name'"
+    },
+    {
+      "type": "command",
+      "key": "GPU 2",
+      "outputColor": "red",
+      "text": "fastfetch -s gpu --format json | jq -r '.[0].result[1].name'"
+    },
+	//"gpu",
     "memory",
-    // "swap",
     "disk",
     "display",
-    // "font",
-    // System font
     "battery",
     "poweradapter",
+    "break",
+   // "colors"
+  ]
+}
+
 
     "break",
     "colors"
