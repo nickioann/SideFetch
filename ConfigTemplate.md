@@ -55,18 +55,14 @@ Here is my config file for anyone to use as a template for their own. All text w
 
     // MULTI-DEVICE / jq:
     // Use JSON + jq when a module has multiple results and you want them separately, in this scenario its the integrated and external gpu.
-    //
-    // Inspect the module first:  fastfetch -s <module> --format json | jq
-    // jq indexes start at 0: [0] = first   [1] = second   [2] = third
+    // First inspect the module first:  fastfetch -s <module> --format json | jq
+    // jq indexes start at 0: [0]=first, [1]=second, [2]=third
     // GPU:
     //   .[0].result[0].name = GPU 1
     //   .[0].result[1].name = GPU 2
     //
     // So we need to create a command type for both gpus: fastfetch -s gpu --format json | jq -r '.[0].result[1].name'
-    //
-    // Colors:
-    //   outputColor = output/value
-    //   keyColor    = label/key
+    // And since we want them separate we can also set their own signatire output and label using "outputColor" for the output and "keyColor" for the module
     {
       "type": "command",
       "key": "GPU 1",
