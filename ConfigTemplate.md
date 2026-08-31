@@ -5,15 +5,6 @@ Here is my config file for anyone to use as a template for their own. All text w
 ## `config.jsonc` file:
 
 ```jsonc
-# Fastfetch Config Template
-
-My `fastfetch` config, shared as a starting template for anyone who wants one.
-
-> **Note:** Lines starting with `//` are comments. Fastfetch ignores them when it reads the file.
-
-## `config.jsonc`
-
-```jsonc
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
