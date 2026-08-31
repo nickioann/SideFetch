@@ -13,7 +13,7 @@ Here is my config file for anyone to use as a template for their own. All text w
     "source": "/home/nickioann/.config/fastfetch/onion.txt",
     "color": {
       //"1": "",
-      //"2": "yellow",
+      //"2": "",
       "3": "green"
     }
   },
@@ -54,7 +54,7 @@ Here is my config file for anyone to use as a template for their own. All text w
     "cpu",
 
     // MULTI-DEVICE / jq:
-    // Use JSON + jq when a module has multiple results and you want them separately.
+    // Use JSON + jq when a module has multiple results and you want them separately, in this scenario its the integrated and external gpu.
     //
     // Inspect the module first:  fastfetch -s <module> --format json | jq
     // jq indexes start at 0:
